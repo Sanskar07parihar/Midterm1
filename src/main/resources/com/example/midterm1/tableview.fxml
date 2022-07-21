@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.midterm1.TableController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="100.0" layoutY="46.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Table" />
+            <TableView prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="studentcol" prefWidth="75.0" text="Student #" />
+                <TableColumn fx:id="firstnamecol" prefWidth="75.0" text="First Name" />
+                  <TableColumn fx:id="lastnamecol" prefWidth="75.0" text="Last Name" />
+                  <TableColumn fx:id="gendercol" prefWidth="75.0" text="gender" />
+                  <TableColumn fx:id="provincecol" prefWidth="75.0" text="province" />
+                  <TableColumn fx:id="telephonecol" prefWidth="75.0" text="telephone" />
+                  <TableColumn fx:id="majorcol" prefWidth="75.0" text="major" />
+                  <TableColumn fx:id="avggradecol" prefWidth="75.0" text="avg grade" />
+              </columns>
+            </TableView>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="label" text="number of students: " />
+                  <ComboBox fx:id="comboboxid" prefWidth="150.0" promptText="select province" />
+                  <Button fx:id="buttonid" mnemonicParsing="false" text="load all students" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
